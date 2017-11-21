@@ -24,6 +24,8 @@ var searchPanel = document.getElementById("searchPanel");
 var leftSearchPusck = document.getElementById("leftSearchPusck");
 var rightSearch = document.getElementById("rightSearch");
 
+var openLeftSearch = document.getElementById("openLeftSearch");
+
 function controlSize(){
     var y = document.documentElement.clientHeight;
     var x = document.documentElement.clientWidth;
@@ -231,7 +233,7 @@ searchLeftPanelBtn.addEventListener("click",()=>{
         searchPanel.className = "search-left-panel search-open";
     }   
 });
-leftSearchPusck.addEventListener("click",()=>{
+openLeftSearch.addEventListener("click",()=>{
     if (leftSearchPusck.className == "open-left-pusck") {
         leftSearchPusck.className = "down-left-pusck";
     } else {
