@@ -1,0 +1,159 @@
+include ./mixins
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Windows
+        mixin link
+    body
+        div(id="windowsDesktop" class="windows-desktop")
+        div(id="closeStart")
+            div(class="panel-win" id="panelWin")
+                div(class="cont-panel")
+                    ul(class="left-panel")
+                        li(id="winStart")
+                            i(class="fa fa-windows" aria-hidden="true")
+                        li(id="searchLeftPanelBtn")
+                            i(class="fa fa-search" aria-hidden="true")
+                        li(id="edgeOpen")
+                            i(class="fa fa-edge" aria-hidden="true")
+                        li
+                            i(class="fa fa-folder" aria-hidden="true")
+                        li(id="panelCMD")
+                            i(class="fa fa-terminal" aria-hidden="true")
+                    ul(class="right-panel")
+                        li
+                            div
+                                i(class="fa fa-battery-full" aria-hidden="true")
+                        li 
+                            div ENG
+                        li(id="timePanel")
+                            div
+                                p(id="panelTime") 
+                                p(id="panelDate") 
+                        li
+                            div(id="rightMenuMessag")
+                                i(class="fa fa-commenting" aria-hidden="true")
+            div(class="panel-start" id="panelStart")
+                div(class="content-panel-start")
+                    div(class="pusck-left")
+                        div(id="leftPusck" class="down-left-pusck")
+                            ul(class="top-left-pusck")
+                                li(id="openLeftPusck")
+                                    i(class="fa fa-bars" aria-hidden="true")
+                                    p ПУСК
+                            ul(class="bottom-left-pusck")
+                                li
+                                    i(class="fa fa-user-circle" aria-hidden="true")
+                                    p Tim Bondarenko
+                                li
+                                    i(class="fa fa-cog" aria-hidden="true")
+                                    p Параметры
+                                li(id="downWindows")
+                                    i(class="fa fa-power-off" aria-hidden="true")
+                                    p Выключение
+                    div(class="list-catalog" id="listCatalog")
+                        div
+                            ul
+                                li
+                                    p Недавно добавленные
+                                //- li
+                                //-     p Программа 2
+                                //- li
+                                //-     p Программа 3
+                                //- li
+                                //-     p Программа 4
+                                //- li
+                                //-     p Программа 5
+                                //- li
+                                //-     p Программа 6
+                                //- li
+                                //-     p Программа 7
+                                //- li
+                                //-     p Программа 8
+                                //- li
+                                //-     p Программа 9
+                                //- li
+                                //-     p Программа 10
+                    div(class="run-prog" id="runProg")
+                        div(class="content-run-prog" id="contentProg")
+                            div(class="prog-box" id="moveProg")
+                                div(class="icon-text")
+                                    i(class="fa fa-edge" aria-hidden="true")
+                                    p Microsoft Edge
+            div(class="edge-window edge-window-close" id="edgeWindow")
+                div(class="edge-content")
+                    div(class="top-line")
+                        audio(src="sound/Dennis Lloyd - Nevermind (Radio Mix).mp3"  controls)
+                        ul(class="right-button-windows")
+                            li(id="closeEdge")
+                                i(class="fa fa-window-minimize" aria-hidden="true")
+                            li
+                                i(class="fa fa-window-restore" aria-hidden="true")  
+                            li(id="exitEdge")
+                                i(class="fa fa-times" aria-hidden="true")
+                    div(class="content-browser")
+                        h1 Сделаю потом окна)
+                        h3 Если вставить iframe с страницей, будет лагать!
+            div(id="rightMessageMenu" class="close-rigth-menu")
+                div(class="content-right-menu" id="contRightMenu")
+                    ul(class="bottom-icon-right-menu")
+                        li
+                            i(class="fa fa-tablet" aria-hidden="true")
+                            p Режим планшета
+                        li
+                            i(class="fa fa-code-fork" aria-hidden="true")
+                            p Соединиться
+                        li
+                            i(class="fa fa-wifi" aria-hidden="true")
+                            p Сеть
+                        li
+                            i(class="fa fa-cog" aria-hidden="true")
+                            p Все параметры
+                    div(class="messages-right")
+                        p Новых уведомлений нет
+            div(id="chatWindows" class="cmd-windows cmd-windows-close")
+                div(class="cmd-content")
+                    div(class="top-line")
+                        p(class="name-window") Terminal
+                        ul(class="right-button-windows")
+                            li(id="closeCMD")
+                                i(class="fa fa-window-minimize" aria-hidden="true")
+                            li
+                                i(class="fa fa-window-restore" aria-hidden="true")  
+                            li(id="exitCMD")
+                                i(class="fa fa-times" aria-hidden="true")
+                    div(class="comand-list" id="comandList")
+                        ul(id="containerMessages")
+                            li Microsoft Windows [Version 10.0.16299.64]
+                            li (c) Корпорация Майкрософт (Microsoft Corporation), 2017. Все права защищены.
+                        div(class="imput-cmd")
+                            p C:\Users>
+                            input(type="text" id="cmdInp" autofocus)
+            div(id="searchPanel" class="search-left-panel search-close")
+                div(class="content-seach-panel")
+                    div(class="pusck-left")
+                        div(id="leftSearchPusck" class="down-left-pusck")
+                            ul(class="top-left-pusck")
+                                li(id="openLeftSearch")
+                                    i(class="fa fa-bars" aria-hidden="true")
+                                    p ПУСК
+                            ul(class="bottom-left-pusck")
+                                li
+                                    i(class="fa fa-user-circle" aria-hidden="true")
+                                    p Tim Bondarenko
+                                li
+                                    i(class="fa fa-cog" aria-hidden="true")
+                                    p Параметры
+                                li(id="downWindows")
+                                    i(class="fa fa-power-off" aria-hidden="true")
+                                    p Выключение
+                    div(class="right-search" id="rightSearch")
+                        ul
+                            li Для поиска начните вводить нужное название
+                        input(type="text" placeholder="Поиск в Windows")
+    mixin script
+    script(src="/javascripts/div.js")
+    script(src="/javascripts/cmd.js")

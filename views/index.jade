@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    div(class="login-windows" id="loginWindows")
+        div(class="login-div")
+            div(class="img-admin")
+            h1 Admin
+            form(action="/", method="post" class="password")
+                input(type="password" name="password" placeholder="password")
+                button(type="submit") 
+                    i(class="fa fa-arrow-right" aria-hidden="true")
+        ul(class="bottom-right")
+            li(id="Iinvalid")
+                i(class="fa fa-wheelchair" aria-hidden="true")
+            li
+                i(class="fa fa-power-off" aria-hidden="true")
+        div(id="gele" class="close-gele")
+            p Siri         
+    script(src="/javascripts/login.js")

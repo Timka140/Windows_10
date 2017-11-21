@@ -1,0 +1,522 @@
+body {
+    overflow: hidden;
+}
+::-webkit-scrollbar{
+    width:8px;
+}
+::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    border-color: #777;
+    background-color: #aaa;
+}
+::-webkit-scrollbar-thumb:hover{
+    border-width: 1px 1px 1px 2px;
+    border-color: #555;
+    background-color: #777;
+}
+::-webkit-scrollbar-track{
+    border-width:0;
+}
+::-webkit-scrollbar-track:hover{
+    border-left: solid 1px #aaa;
+    background-color: #eee;
+}
+.windows-desktop{
+    display: block;
+    background: rgba(0, 0, 0, .5);
+    /* transition: all .1s ease-in-out; */
+    background: url("../images/desctop.jpg");
+    background-size:cover; 
+}
+.panel-win {
+    position: fixed;
+    bottom: 0;
+    width: 20px;
+    height: 45px;
+    background: rgba(0, 0, 0, .85);
+    z-index: 999;
+}
+.cont-panel {
+    position: relative;
+    color: #fff;
+    width: 100%;
+    height: 45px;
+}
+.left-panel {
+    display: inline-block;
+}
+.left-panel li {
+    display: inline-block;
+    width: 50px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    cursor: default;
+}
+.left-panel li:hover {
+    background: rgba(255, 255, 255, 0.26)
+}
+.left-panel li:hover:first-child {
+    color: #1976D2;
+}
+.left-panel li i{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 100; 
+}
+.right-panel {
+    float: right;
+    color: #fff;
+    display: inline-block;
+}
+.right-panel li {
+    display: inline-block;
+    width: 50px;
+    font-size: 16px;
+    height: 45px;
+    position: relative;
+}
+.right-panel li div {
+    position: absolute;
+    text-align: center;
+    line-height: 45px;
+    width: 50px;
+    height: 45px
+}
+.right-panel li:hover {
+    background: rgba(255, 255, 255, 0.26);
+}
+#timePanel{
+    width: 100px;
+}
+#timePanel p:first-child {
+    margin: 10px 0 2px 0; 
+}
+#timePanel p{
+    width: 100px;
+    text-align: center;
+    line-height: 12px;
+    height: 12px;
+    margin: 2px;
+    font-size: 12px; 
+}
+.panel-start {
+    position: fixed;
+    bottom: 45px;
+    left: 0;
+    width: 950px;
+    height: 0;
+    background: rgba(0, 0, 0, .85);
+    transition: all .1s ease-in-out;
+    overflow: hidden;
+    z-index: 999;
+}
+.on-panel {
+    transition: all .1s ease-in-out;
+    height: 550px;
+}
+.off-panel {
+    transition: all .1s ease-in-out;
+    height: 0px;
+}
+.content-panel-start {
+    width: 950px;
+    height: 550px;
+}
+.pusck-left {
+    height: 550px;
+    width: 50px;
+    position: relative;
+    display: inline-block;
+    z-index: 999;
+}
+.list-catalog {
+    height: 550px;
+    width: 250px;
+    position: relative;
+    display: inline-block;
+}
+#runProg {
+    height: 550px;
+    width: 650px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.pusck-left div{
+    position: absolute;
+    height: 550px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+    z-index: 800;
+}
+.list-catalog div{
+    position: absolute;
+    height: 550px;
+    width: 250px;
+}
+.content-run-prog{
+    position: relative;
+    padding-top: 10px;
+    height: 540px;
+    width: 650px;
+    right: 0;
+    top: 0;
+}
+.bottom-left-pusck {
+    position: absolute;
+    bottom: 0;
+}
+.top-left-pusck {
+    position: absolute;
+    top: 0;
+
+}
+.pusck-left div ul {
+    margin: 0;
+}
+.pusck-left div ul li {
+    display: block;
+    width: 300px;
+    height: 45px;
+    color: #fff;
+    font-size: 18px;
+}
+.pusck-left div ul li i {
+    text-align: center;
+    line-height: 45px;
+    float: left;
+    width: 50px;
+    height: 45px;
+    display: inline-block;
+}
+.pusck-left div ul li p {
+    line-height: 45px;
+    width: 210px;
+    height: 45px;
+    display: inline-block;
+    margin: 0;
+    font-size: 14px;
+    text-align: left; 
+}
+.pusck-left div ul li:hover {
+    background: rgba(255, 255, 255, 0.26);
+}
+.open-left-pusck {
+    width: 260px;
+    transition: all .2s ease-in-out;
+    background: rgb(41, 41, 41);
+}
+.down-left-pusck {
+    width: 50px;
+    transition: all .2s ease-in-out;
+}
+.list-catalog ul {
+    display: block;
+    width: 250px;
+}
+.list-catalog ul li {
+    display: block;
+    width: 250px;
+    height: 35px;
+    line-height: 35px;
+    cursor: default;
+}
+.list-catalog ul li:first-child p{
+    color: #ccc;
+    font-size: 14px;
+}
+.list-catalog ul li:hover {
+    background: rgba(255, 255, 255, .1);
+}
+.list-catalog ul li p{
+    display: block;
+    width: 240px;
+    height: 35px;
+    text-decoration: none;
+    margin-left: 10px;
+    margin: 0;
+    color: #fff;
+}
+.prog-box {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    background: rgb(34, 158, 196);
+    position: absolute; 
+}
+.hiden-box-curs {
+    cursor: none;
+}
+.icon-text {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    text-align: center;
+    line-height: 120px;
+    font-size: 36px;
+    color: #fff;
+}
+.icon-text p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0;
+}
+.edge-window {
+    width: 800px;
+    overflow: hidden;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    left: 80px;
+    transition: height .1s ease-in-out;
+}
+.edge-content {
+    width: 800px;
+    height: 600px; 
+    position: relative;
+}
+.top-line {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 35px;
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+}
+.right-button-windows {
+    display: inline-block;
+    float: right;
+    margin: 0;
+}
+.right-button-windows li {
+    display: inline-block;
+    width: 40px;
+    height: 34px;
+    text-align: center;
+    line-height: 35px;
+}
+.right-button-windows li:hover {
+    background: rgb(224, 224, 224);
+}
+.right-button-windows li:last-child:hover {
+    background: rgb(236, 26, 26);
+    color: #fff;
+}
+.content-browser {
+    position: absolute;
+    top: 35px;
+    width: 100%-35;
+    height: 100%; 
+}
+.content-browser iframe {
+    display: block;
+    width: 765px;
+    height: 600px;
+}
+.edge-window-open {
+    height: 600px; 
+}
+.edge-window-close {
+    height: 0px; 
+}
+#rightMessageMenu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: block;
+    background: rgba(0, 0, 0, .85);
+    overflow: hidden;
+    transition: width .2s ease-in-out;
+}
+.content-right-menu {
+    display: block;
+    position: relative;
+    width: 350px;
+}
+.bottom-icon-right-menu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    width: 350px;
+    margin: 0;
+}
+.bottom-icon-right-menu li {
+    display: inline-block;
+    width: 85px;
+    height: 60px;
+    position: relative;
+    background: rgb(94, 94, 94);
+    margin-left: 2px;
+    cursor: default;
+}
+.bottom-icon-right-menu li p{
+    font-size: 12px;
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    bottom: 2px;
+    width: 60px;
+    height: 40px;
+    bottom: 0;
+    left: 6px;
+}
+.bottom-icon-right-menu li:hover {
+    background:rgb(131, 131, 131);
+}
+.bottom-icon-right-menu li i{
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.messages-right {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 350px;
+}
+.messages-right p{
+    color: #888;
+    margin-left: 15px; 
+}
+.open-rigth-menu {
+    width: 350px;
+}
+.close-rigth-menu {
+    width: 0px;
+}
+.top-line audio {
+    position: absolute;
+    left: 0;
+}
+.cmd-windows {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    display: inline-block;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    transition: height .1s ease-in-out; 
+    background: #fff;
+}
+.cmd-windows-close {
+    height: 0px;
+}
+.cmd-windows-open {
+    height: 500px;
+}
+.cmd-content {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    display: block;
+}
+.comand-list {
+    position: absolute;
+    top: 35px;
+    background: black;
+    width: 800px;
+    height: 465px;
+    padding: 10px;
+}
+#containerMessages {
+    width: 780px;
+    height: 420px;
+    overflow-y: auto;
+    margin: 0;
+}
+.comand-list ul li {
+    display: block;
+    height: 25px;
+    color: #ddd;
+    font-size: 14px; 
+    width: 735px;
+}
+.imput-cmd {
+    position: absolute;
+    width: 800px;
+    height: 30px;
+    bottom: 0;
+    left: 0;
+}
+.imput-cmd p{
+    display: inline-block;
+    color: #ddd;
+    margin-left: 10px; 
+    font-size: 14px;
+    margin-bottom: 0; 
+}
+.imput-cmd input{
+    display: inline-block;
+    color: #ddd;
+    font-size: 14px;
+    padding-left: 5px; 
+    background: none;
+    border: none;
+    width: 705px;
+    outline: none;
+}
+.search-left-panel {
+    position: fixed;
+    bottom: 45px;
+    left: 0;
+    height: 550px;
+    background: rgba(0, 0, 0, .85);
+    overflow: hidden;
+    transition: all .1s ease-in-out;
+}
+.content-seach-panel {
+    position: relative;
+    width: 400px;
+    height: 550px;
+}
+.search-open {
+    width: 400px;
+}
+.search-close {
+    width: 0px;
+}
+.right-search {
+    display: inline-block;
+    position: relative;
+    float: right;
+    width: 350px;
+    height: 550px;
+}
+.right-search ul{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px;
+    margin: 0;
+}
+.right-search ul li {
+    display: block;
+    width: 330px;
+    height: 30px;
+    color: #ddd;
+    margin: 0 10px 0 10px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.right-search input {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    width: 350px;
+    height: 40px;
+    padding-left: 5px; 
+}
+.name-window {
+    position: absolute;
+    left: 20px;
+    height: 35px;
+    line-height: 35px;
+}
